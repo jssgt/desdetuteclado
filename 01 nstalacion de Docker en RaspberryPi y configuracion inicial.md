@@ -1,4 +1,4 @@
-***Instalacion de Docker en RaspberryPi y configuracion inicial
+# Instalacion de Docker en RaspberryPi y configuracion inicial
 
 
 Documetacion sobre la instalacion https://docs.docker.com/engine/install/ubuntu/
