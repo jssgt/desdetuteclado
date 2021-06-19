@@ -30,8 +30,9 @@ Instalar docker
 ```
 sudo apt-get update 
 sudo apt-get install docker-ce docker-ce-cli containerd.io
-Instalar docker compose
 ```
+Instalar docker compose
+
 ```
 sudo apt-get install docker-compose
 ```
@@ -40,6 +41,21 @@ Ahora añadimos los permisos necesarios al usuario que tenemos activo para poder
 sudo groupadd docker 
 sudo usermod -aG docker $USER
 ```
+lo probamos 
+```
+docker ps
+```
+si sale el error:
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/json: dial unix /var/run/docker.sock: connect: permission denied
+
+```
+sudo chmod 666 /var/run/docker.sock
+```
+
+
+
+
+
 Instalacion de Docker portainer
 https://documentation.portainer.io/v2.0/deploy/ceinstalldocker/
 
